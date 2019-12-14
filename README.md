@@ -13,3 +13,7 @@ I'm happy to discuss any of the material you find on my blog, offer free advice,
 - Email: [drake-lambert@outlook.com](mailto:drake-lambert@outlook.com)
 - GitHub: [https://github.com/DrakeLambert](https://github.com/DrakeLambert)
 - LinkedIn: [https://www.linkedin.com/in/drakelambert](https://www.linkedin.com/in/drakelambert)
+
+## Posts
+
+### [12/2019 - C# 8 Switch Expressions with Pattern Matching](/2019/12/c#-8-switch-expressions-with-pattern-matching.md)

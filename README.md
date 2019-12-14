@@ -16,4 +16,4 @@ I'm happy to discuss any of the material you find on my blog, offer free advice,
 
 ## Posts
 
-### [12/2019 - C# 8 Switch Expressions with Pattern Matching](/2019/12/c#-8-switch-expressions-with-pattern-matching.md)
+### [12/2019 - C# 8 Switch Expressions with Pattern Matching](/2019/12/C%23-8-Switch-Expressions-with-Pattern-Matching.md)

@@ -2,7 +2,7 @@
 
 *Written 12/2019*
 
-Most .NET engineers are familiar with the original `switch` statement in C#. Like similar constructs in other object oriented languages, given an arbitrary expression, you can match it's result to a `case`, and execute selected statements.
+Most .NET engineers are familiar with the original `switch` statement in C#. Like similar constructs in other object oriented languages, given an arbitrary expression, you can match its result to a `case`, and execute selected statements.
 
 ```csharp
 switch (car.Color) {

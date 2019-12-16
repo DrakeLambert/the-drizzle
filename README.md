@@ -1,4 +1,4 @@
-## Welcome to Drake's Blog
+# Welcome to Drake's Blog
 
 Hi! I'm Drake Lambert. I'm a software engineer with a love for web technologies and architectural patterns.
 
@@ -6,7 +6,7 @@ I heard somewhere that coming up with blog topics is as easy as identifying chal
 
 My work usually revolves around [ASP.NET](https://dotnet.microsoft.com/apps/aspnet) and other web technologies, so you can expect to find related content here. Thanks for reading!
 
-### Contact Me
+## Contact Me
 
 I'm happy to discuss any of the material you find on my blog, offer free advice, or just talk tech. Don't hesitate to shoot me an email!
 
@@ -16,4 +16,4 @@ I'm happy to discuss any of the material you find on my blog, offer free advice,
 
 ## Posts
 
-### [12/2019 - C# 8 Switch Expressions with Pattern Matching](/2019/12/C%23-8-Switch-Expressions-with-Pattern-Matching.md)
+### [12/2019 - C# 8 Switch Expressions with Pattern Matching](/2019/12/C%23-8-Switch-Expressions-with-Pattern-Matching)

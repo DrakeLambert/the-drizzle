@@ -1,6 +1,4 @@
-![the drizzle logo](/media/logo_transparent_cropped_text.png)
-
-<img src="/media/logo_transparent_cropped_text.png" alt="the drizzle logo" height="200"/>
+<img src="/media/logo_transparent_cropped_text.png" alt="the drizzle logo" height="400"/>
 
 # Welcome to Drake's Blog
 

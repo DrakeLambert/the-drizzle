@@ -1,4 +1,4 @@
-![Image of Yaktocat](/media/logo_transparent.png)
+![the drizzle logo](/media/logo_transparent.png)
 
 # Welcome to Drake's Blog
 

@@ -1,5 +1,7 @@
 ![the drizzle logo](/media/logo_transparent_cropped_text.png)
 
+<img src="/media/logo_transparent_cropped_text.png" alt="the drizzle logo" height="200"/>
+
 # Welcome to Drake's Blog
 
 Hi! I'm Drake Lambert. I'm a software engineer with a love for web technologies and architectural patterns.

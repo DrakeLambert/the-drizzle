@@ -1,3 +1,5 @@
+![Image of Yaktocat](/media/logo_transparent.png)
+
 # Welcome to Drake's Blog
 
 Hi! I'm Drake Lambert. I'm a software engineer with a love for web technologies and architectural patterns.

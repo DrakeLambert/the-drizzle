@@ -150,7 +150,7 @@ static double GetAreaOptimized(this Shape shape)
 {
     switch (shape)
     {
-                                 // 'when' followed by boolean expression
+        // 'when' followed by boolean expression
         case Rectangle rectangle when rectangle.Height is 0 || rectangle.Width is 0:
         case Circle circle when circle.Radius is 0:
             return 0;

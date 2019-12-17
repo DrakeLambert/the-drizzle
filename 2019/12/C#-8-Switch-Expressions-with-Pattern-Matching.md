@@ -161,7 +161,7 @@ static double GetAreaOptimized(this Shape shape)
 
 Any boolean valued expression can follow the `when` keyword. This gives the developer the ability to conditionally execute each `case` based on an expression evaluated at runtime rather than a compile time constant or other pattern.
 
-By the way, if you haven't seen the `is` keyword before, you'll love it! It takes all the pattern matching goodness seen and this article, and allows us to use it in any context as a boolean valued expression. See [C# 7 Pattern Matching - Is Expression](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-7.0/pattern-matching#is-expression) for more information.
+By the way, if you haven't seen the `is` keyword before, you'll love it! It takes all the pattern matching goodness seen in this article and allows us to use it in any context as a boolean valued expression. See [C# 7 Pattern Matching - Is Expression](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-7.0/pattern-matching#is-expression) for more information.
 
 ## C# 8 Features
 

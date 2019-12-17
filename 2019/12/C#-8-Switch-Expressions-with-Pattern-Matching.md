@@ -18,7 +18,7 @@ switch (car.Color) {
 }
 ```
 
-In the past, I've found that `switch` statements were useful for cleaning up long `if else` chains, but I rarely used them in my code. The `switch-case-break` syntax felt bloated with keywords, and, before C# 7, cases only supported the *constant pattern*. This meant that each case value had to be a compile-time constant.
+In the past, I've found that `switch` statements were useful for cleaning up long `if else` chains, but I rarely found myself using them in code. To me, the `switch-case-break` syntax feels bloated with keywords, and, before C# 7, cases only supported the *constant pattern*. This meant that each case value had to be a compile-time constant.
 
 Fast forward to C# 8, and the lowly `switch` statement has been upgraded with new features that make it much more appealing! Take a look at how we can simplify the above example:
 

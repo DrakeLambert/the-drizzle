@@ -239,7 +239,7 @@ This pattern is also useful in combination with other patterns seen later in thi
 
 ### Positional Pattern
 
-The *positional pattern* has a tuple-like syntax, and allows pattern matching on a tuple or multiple expressions grouped into a tuple.
+The *positional pattern* has a tuple-like syntax. It allows pattern matching on a any type with a `Deconstruct` method, but it's most easily used with tuples.
 
 The following example shows the ease with which you can write a complex state machine using the positional pattern.
 

@@ -31,7 +31,7 @@ Console.WriteLine(car.Color switch
 });
 ```
 
-I'll introduce five new *matching patterns* and three other `switch` improvements that can make complex control flow short and readable.
+In this article, we'll cover five new *matching patterns* and three other `switch` improvements that can make complex control flow short and readable.
 
 ## Contents
 

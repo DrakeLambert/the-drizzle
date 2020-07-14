@@ -12,7 +12,7 @@ During code review, my team members quickly spotted this odd change. They questi
 
 Great catch! First off, I do agree that this looks questionable. Even after the explanation I give below, it may be beneficial to add the `async`/`await` keywords back just so this doesn't catch people off guard.
 
-In short, we can safely omit `async`/`await` since the calling method, `ListDeductionMappingsAsync`, is ultimately returning the same thing as what it's calling, `_deductionMappingRepository.ListAsync`. Instead of our method awaiting the completion of the underlying task and immediately returning the result, it just hands the task to the caller, basically saying, "Here, you await this instead of me".
+In short, we can safely omit `async`/`await` since the calling method, `GetRecordAsync`, is ultimately returning the same thing as what it's calling, `_recordRepository.GetAsync`. Instead of our method awaiting the completion of the underlying task and immediately returning the result, it just hands the task to the caller, basically saying, "Here, you await this instead of me".
 
 The asynchronous nature of / ability to `await` a method depends on it's return type being `Task` or `Task<T>` (actually [the compiler uses duck typing](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/async#return-types) to know which methods are awaitable, but I've simplified). You can `await` a `Task` because it exposes a [callback API](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.compilerservices.taskawaiter.oncompleted?view=netcore-3.1) that allows the framework to tell it what code to execute after whatever asynchronous operation finishes.
 

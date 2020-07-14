@@ -21,3 +21,5 @@ I'm happy to discuss any of the material you find on my blog, offer free advice,
 ### [12/2019 - C# 8 Switch Expressions with Pattern Matching](/2019/12/C%23-8-Switch-Expressions-with-Pattern-Matching)
 
 ### [07/2020 - Asynchronous Method Without `async` in C#](/2020/07/Asynchronous-Method-Without-async-in-C%23)
+
+If you're viewing this from the [GitHub `README`](https://github.com/DrakeLambert/the-drizzle), the post links wont work. [View the blog directly](https://drakelambert.dev/) or [browse the source code here](https://github.com/DrakeLambert/the-drizzle)!

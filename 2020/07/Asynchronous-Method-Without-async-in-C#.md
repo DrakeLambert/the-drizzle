@@ -1,4 +1,4 @@
-# Asynchronous Method Without `async` in C#
+# Asynchronous Method Without `async` in C\#
 
 I recently changed a controller action's method signature like so:
 
@@ -8,7 +8,9 @@ I recently changed a controller action's method signature like so:
 + public Task GetRecordAsync(int id) => _recordRepository.GetAsync(id);
 ```
 
-During code review, my team members quickly spotted this odd change. They questioned the removal of the `async` and `await` keywords. This was my response:
+During code review, my team members quickly spotted this odd change. They questioned the removal of the `async` and `await` keywords.
+
+## My Initial Response
 
 Great catch! First off, I do agree that this looks questionable. Even after the explanation I give below, it may be beneficial to add the `async`/`await` keywords back just so this doesn't catch people off guard.
 
@@ -25,9 +27,71 @@ When the compiler sees an `async` method, it creates a new state machine class t
 
 Removing the `async`/`await` keywords prevents the generation of the state machine. This slightly decreases overhead of running the method. TBH, I wouldn't be surprised if the compiler is smart enough to optimize around this whole thing anyway.
 
+## Pitfalls of Omitting `async`/`await`
+
+After getting feedback on this post, I learned that you can run into several hard to understand bugs if the keywords are omitted by default.
+
+Check out the [runnable demo code here](https://github.com/DrakeLambert/the-drizzle/tree/master/2020/07/OmittingAsyncDemo)!
+
+### Missing Methods In the Stack Trace
+
+Consider the following chain of methods:
+
+```csharp
+async Task Top()
+{
+    await Middle();
+}
+
+Task Middle() // keywords omitted here
+{
+    return Bottom();
+}
+
+async Task Bottom()
+{
+    await Task.Delay(10);
+    throw new Exception("Bottom Exception");
+}
+```
+
+When calling `Top()`, the resulting stack trace won't include the call to `Middle()`:
+
+```text
+System.Exception: Bottom Exception
+   at OmittingAsyncDemo.WithoutKeywords.Bottom()
+   at OmittingAsyncDemo.WithoutKeywords.Top()
+   at OmittingAsyncDemo.Program.Main(String[] args)
+```
+
+### Cancellation of Tasks Dependent Upon `using`
+
+The bug in the below code would leave me scratching my head. Calling `UsingStatementWithoutKeywords()` results in a `TaskCanceledException`.
+
+```csharp
+Task<string> UsingStatementWithoutKeywords()
+{
+    using var client = new HttpClient();
+    return client.GetStringAsync("https://1.1.1.1");
+}
+```
+
+This happens because the `HttpClient` is disposed before the request made ever completes, thus canceling any ongoing requests.
+
+## Conclusion
+
+Check out more subtle pitfalls of omitting `async`/`await` in [this article by Stephen Cleary](https://blog.stephencleary.com/2016/12/eliding-async-await.html).
+
+Equipped with this new information, I would **recommend against removing the keywords by default.** As they say, premature optimization is the root of all evil. 😅 That's a little harsh, but I'm sure you catch my drift. I would consider removing the keywords if these conditions are met:
+
+- The async method is merely a passthrough
+- The code path has been shown to be very hot
+
 Resources:
 
 - [Async State Machine](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.compilerservices.asyncstatemachineattribute?view=netcore-3.1#remarks)
 - [MS Docs: Async State Machine Remarks](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/async#return-types)
 - [`TaskAwaiter.OnCompleted()` Callback API](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.compilerservices.taskawaiter.oncompleted?view=netcore-3.1)
 - [Async Await and the Generated StateMachine](https://www.codeproject.com/Articles/535635/Async-Await-and-the-Generated-StateMachine)
+- [Runnable Demo Code Demonstrating Pitfalls](https://github.com/DrakeLambert/the-drizzle/tree/master/2020/07/OmittingAsyncDemo)
+- [Eliding Async and Await - Stephen Cleary](https://blog.stephencleary.com/2016/12/eliding-async-await.html)

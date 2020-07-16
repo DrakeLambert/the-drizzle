@@ -312,6 +312,10 @@ Feel free to reach out to me with any questions. I would also greatly appreciate
 - GitHub: [https://github.com/DrakeLambert](https://github.com/DrakeLambert)
 - LinkedIn: [https://www.linkedin.com/in/drakelambert](https://www.linkedin.com/in/drakelambert)
 
+If you find this post useful, and wish to support it, you can below!
+
+<a href="https://www.buymeacoffee.com/drakelambert" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-blue.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
+
 ## Additional Resources
 
 - [C# Pattern Matching Overview](https://docs.microsoft.com/en-us/dotnet/csharp/pattern-matching)

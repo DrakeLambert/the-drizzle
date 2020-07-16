@@ -87,6 +87,10 @@ Equipped with this new information, I would **recommend against removing the key
 - The async method is merely a passthrough
 - The code path has been shown to be very hot
 
+If you find this post useful, and wish to support it, you can below!
+
+<a href="https://www.buymeacoffee.com/drakelambert" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-blue.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
+
 Resources:
 
 - [Async State Machine](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.compilerservices.asyncstatemachineattribute?view=netcore-3.1#remarks)

@@ -1,6 +1,6 @@
 # C# 8 Switch Expressions with Pattern Matching
 
-*Written 12/2019*
+*Written 12/2019, Updated 7/2020*
 
 Most .NET engineers are familiar with the original `switch` statement in C#. Like similar constructs in other object oriented languages, given an arbitrary expression, you can match its result to a `case`, and execute selected statements.
 
@@ -165,7 +165,7 @@ By the way, if you haven't seen the `is` keyword before, you'll love it! It take
 
 ## C# 8 Features
 
-The following features are only available in C# 8 and above. Without changing compiler settings, you'll only be able to use these in .NET Core >=3.0 and .NET Standard >=2.1. Don't fear, it's trivial to get these features working in .NET Framework. To do this, you'll need to add a single compiler setting to your `.csproj`. [See this link](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version#edit-the-project-file).
+The following features are only available in C# 8 and above. Without changing compiler settings, you'll only be able to use these in .NET Core >=3.0 and .NET Standard >=2.1.
 
 ### Switch Expressions
 

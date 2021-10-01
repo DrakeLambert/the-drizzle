@@ -2,7 +2,7 @@
 
 This article is helpful if you want to quickly listen for HTTP requests, inspect them, and respond to them in real time. That means you can decide what request data to explore and what response data to send on the fly!
 
-This could be useful when testing webhooks or dependent web services, or anything else HTTP.
+This could be useful when testing webhooks, dependent web services, or anything else HTTP.
 
 ## Prerequisites
 

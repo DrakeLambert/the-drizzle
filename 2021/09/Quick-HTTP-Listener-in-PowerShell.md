@@ -51,7 +51,7 @@ You could kick off a request from anywhere though. It doesn't have to be from Po
 
 ### 4. Inspect the Request
 
-Baring network or firewall issues, the command in step 2 should complete once the request is received.
+Barring network or firewall issues, the command in step 2 should complete once the request is received.
 
 Now, you have all the time in the world to read every property of the request!
 

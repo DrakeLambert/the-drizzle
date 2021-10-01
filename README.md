@@ -22,6 +22,8 @@ I'm happy to discuss any of the material you find on my blog, offer free advice,
 
 ## Posts
 
+### [09/2021 - Quick HTTP Listener in PowerShell](/2021/09/Quick-HTTP-Listener-in-PowerShell)
+
 ### [07/2020 - Asynchronous Method Without `async` in C#](/2020/07/Asynchronous-Method-Without-async-in-C%23)
 
 ### [12/2019 - C# 8 Switch Expressions with Pattern Matching](/2019/12/C%23-8-Switch-Expressions-with-Pattern-Matching)

@@ -98,4 +98,4 @@ For all this, check out [the docs](https://docs.microsoft.com/en-us/dotnet/api/s
 
 If you find this post useful, and wish to support it, you can below!
 
-<a href="https://www.buymeacoffee.com/drakelambert" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-blue.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
+<a href="https://www.buymeacoffee.com/drakelambert" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>

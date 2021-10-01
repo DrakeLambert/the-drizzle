@@ -2,11 +2,11 @@
 
 This article is helpful if you want to quickly listen for HTTP requests, inspect them, and respond to them in real time. That means you can decide what request data to explore and what response data to send on the fly!
 
-This could be useful when testing webhooks or dependent web services, or anything else HTTP!
+This could be useful when testing webhooks or dependent web services, or anything else HTTP.
 
 ## Prerequisites
 
-[Install PowerShell!](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell)
+[Install PowerShell.](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell)
 
 As far as I can tell, all PowerShell versions should be supported.
 
@@ -94,7 +94,7 @@ $httpListener.Close()
 - HTTPS
 - Authentication: Basic, Digest, Windows, Negotiate, and NTLM
 
-For all this, check out [the docs](https://docs.microsoft.com/en-us/dotnet/api/system.net.httplistener#remarks)!
+For all this, check out [the docs](https://docs.microsoft.com/en-us/dotnet/api/system.net.httplistener#remarks).
 
 If you find this post useful, and wish to support it, you can below!
 

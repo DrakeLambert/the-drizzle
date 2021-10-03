@@ -20,7 +20,6 @@ This solution is made possible by the .NET [`HttpListener`](https://docs.microso
 $httpListener = New-Object System.Net.HttpListener
 $httpListener.Prefixes.Add('http://localhost:5001/')
 $httpListener.Start()
-$context = $httpListener.GetContext()
 ```
 
 Here, I'm listening for requests aimed at `http://localhost:5001/`, but you could listen to any other interface or port on your machine.
@@ -76,7 +75,8 @@ $context.Response.ContentType = 'application/json'
 $responseJson = '{"big": "test"}'
 $responseBytes = [System.Text.Encoding]::UTF8.GetBytes($responseJson)
 $context.Response.OutputStream.Write($responseBytes, 0, $responseBytes.Length)
-$context.Response.Close()
+
+$context.Response.Close() # end the response
 ```
 
 You can call `.Write(...)` multiple times before calling `.Close()`.
